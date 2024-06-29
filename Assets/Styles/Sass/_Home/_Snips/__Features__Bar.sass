@@ -1,0 +1,46 @@
+.features__bar
+	padding: 22px 8%
+	display: flex
+	justify-content: space-between
+	gap: 30px
+	background: $BackGroundOne
+
+	@include respond-to($BreakPoint_768)
+		flex-direction: column
+
+	.item
+		display: flex
+		align-items: flex-start
+	
+		.icon
+			width: 50px
+			height: 50px
+			min-width: 50px
+			min-height: 50px
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			background: $BackGroundTwo
+			margin-right: 15px
+
+			i
+				color: $MainColor
+				font-size: 16px
+	
+		.description
+			display: flex
+			flex-direction: column
+		
+			span
+
+				&:nth-of-type(1)
+					font-size: 16px
+					color: $HeadingDarkColor
+					font-weight: 500
+					margin-top: 3px
+
+				&:nth-of-type(2)
+					font-size: 15px
+					margin-top: 6px
+					color: $TextDarkColor

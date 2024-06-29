@@ -1,0 +1,366 @@
+/* =--------------------------------------= Import Fonts =------------------= */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@keyframes navBarShow {
+  from {
+    top: -100%; }
+  to {
+    top: 0%; } }
+/* =--------------------------------------= Import Resets =------------------= */
+/* =--------------------------------------= Global Resets =------------------= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  height: 100%;
+  width: 100%; }
+
+/* =--------------------------------------= Import Components =------------------= */
+/* =--------------------------------------= Import Utils Classes =------------------= */
+.wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.btn {
+  padding: 14px 26px;
+  border-radius: 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: #70b730;
+  color: #fefefe;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out; }
+  .btn:hover {
+    background: #509710; }
+
+/* =--------------------------------------= Home Page Styles =------------------= */
+/* =------= Home Part Partition =---= */
+.home {
+  width: 100%;
+  /* =------= Addresses Part Partition =---= */
+  /* =------= Addresses Part Partition =---= */
+  /* =------= Addresses Part Partition =---= */ }
+  .home .top__bar {
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    background: #70b730; }
+    @media (max-width: 568px) {
+      .home .top__bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px 0; } }
+    .home .top__bar .left {
+      position: relative; }
+      .home .top__bar .left span {
+        display: inline-block;
+        color: #fefefe; }
+        @media (max-width: 568px) {
+          .home .top__bar .left span {
+            display: block; } }
+        .home .top__bar .left span:nth-of-type(1) {
+          margin-right: 15px; }
+          @media (max-width: 568px) {
+            .home .top__bar .left span:nth-of-type(1) {
+              margin: 0 0 7px; } }
+        .home .top__bar .left span i {
+          font-size: 15px;
+          margin-right: 4px; }
+        .home .top__bar .left span b {
+          font-size: 15px;
+          letter-spacing: 1px;
+          font-weight: 500; }
+    .home .top__bar .right {
+      position: relative; }
+      .home .top__bar .right a {
+        text-decoration: none;
+        color: #fefefe;
+        margin-right: 15px; }
+        .home .top__bar .right a:nth-of-type(4) {
+          margin-right: 0; }
+        .home .top__bar .right a:hover i {
+          transform: translateY(-5px); }
+        .home .top__bar .right a i {
+          color: #fefefe;
+          font-size: 15px;
+          transition: all 0.3s ease-in-out; }
+  .home .features__bar {
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background: white; }
+    @media (max-width: 768px) {
+      .home .features__bar {
+        flex-direction: column; } }
+    .home .features__bar .item {
+      display: flex;
+      align-items: flex-start; }
+      .home .features__bar .item .icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f6f6f6;
+        margin-right: 15px; }
+        .home .features__bar .item .icon i {
+          color: #70b730;
+          font-size: 16px; }
+      .home .features__bar .item .description {
+        display: flex;
+        flex-direction: column; }
+        .home .features__bar .item .description span:nth-of-type(1) {
+          font-size: 16px;
+          color: #212121;
+          font-weight: 500;
+          margin-top: 3px; }
+        .home .features__bar .item .description span:nth-of-type(2) {
+          font-size: 15px;
+          margin-top: 6px;
+          color: #454545; }
+  .home .banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 8%;
+    min-height: 830px;
+    background: url("../../../Assets/Images/BackGround.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    align-items: center; }
+    .home .banner .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1; }
+    .home .banner .navbar {
+      position: absolute;
+      width: calc(100% - 16%);
+      height: 80px;
+      margin: 0 auto;
+      padding: 0 30px;
+      background: #70b730;
+      top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100; }
+      .home .banner .navbar__opened {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 8%;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+        animation: navBarShow 1s; }
+      .home .banner .navbar .logo {
+        width: 130px; }
+      .home .banner .navbar .links {
+        position: relative; }
+        @media (max-width: 868px) {
+          .home .banner .navbar .links {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #70b730;
+            top: 0;
+            right: -100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            z-index: 101; }
+            .home .banner .navbar .links__opened {
+              right: 0; } }
+        .home .banner .navbar .links ul {
+          list-style: none; }
+          .home .banner .navbar .links ul li {
+            display: inline-block;
+            margin-left: 16px; }
+            @media (max-width: 868px) {
+              .home .banner .navbar .links ul li {
+                margin: 20px 0;
+                display: block;
+                text-align: center; } }
+            .home .banner .navbar .links ul li:hover a {
+              color: #212121; }
+            .home .banner .navbar .links ul li a {
+              text-decoration: none;
+              color: #fefefe;
+              text-transform: uppercase;
+              font-size: 15px;
+              transition: all 0.3s ease-in-out; }
+              @media (max-width: 868px) {
+                .home .banner .navbar .links ul li a {
+                  font-size: 20px;
+                  font-weight: bold;
+                  letter-spacing: 1px; } }
+        .home .banner .navbar .links .close {
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          cursor: pointer;
+          z-index: 102;
+          display: none; }
+          @media (max-width: 868px) {
+            .home .banner .navbar .links .close {
+              display: block; } }
+          .home .banner .navbar .links .close i {
+            font-size: 24px;
+            color: #fefefe; }
+      .home .banner .navbar .menu__btn {
+        cursor: pointer;
+        display: none; }
+        @media (max-width: 868px) {
+          .home .banner .navbar .menu__btn {
+            display: block; } }
+        .home .banner .navbar .menu__btn i {
+          color: #fefefe;
+          font-size: 22px; }
+    .home .banner .content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+      z-index: 2; }
+      .home .banner .content h1 {
+        position: relative;
+        font-size: calc(40px + 1.5vw);
+        color: #fefefe;
+        font-weight: 500;
+        margin: 20px 0; }
+        .home .banner .content h1::before {
+          content: "";
+          position: absolute;
+          height: 3px;
+          width: 40px;
+          background: #70b730;
+          left: 0;
+          top: 120%; }
+      .home .banner .content h2 {
+        font-size: calc(18px + 1vw);
+        letter-spacing: 1px;
+        color: #fefefe; }
+      .home .banner .content p {
+        max-width: 500px;
+        margin: 35px 0;
+        color: darkgray;
+        line-height: 1.2; }
+      .home .banner .content .banner__btn {
+        font-size: 16px;
+        align-self: flex-start;
+        box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.55);
+        transition: all 0.3s ease-in-out; }
+        .home .banner .content .banner__btn:hover {
+          box-shadow: 5px 5px 14px -1px rgba(0, 0, 0, 0.4); }
+
+/* =------= Home Part Partition =---= */
+/* =------= Addresses Part Partition =---= */
+.booking {
+  position: relative;
+  width: calc(100% - 16%);
+  margin: 0 auto;
+  top: -100px;
+  z-index: 3;
+  background: white;
+  padding: 20px 30px 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 568px) {
+    .booking {
+      padding: 30px; } }
+  .booking form .title h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #212121;
+    margin-bottom: 15px; }
+  .booking form .row {
+    display: grid;
+    gap: 20px; }
+    .booking form .row .element {
+      position: relative;
+      display: flex;
+      align-items: center; }
+      .booking form .row .element input {
+        display: flex;
+        width: 100%;
+        height: 47px;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 15px;
+        font-size: 14px;
+        color: #4a5158;
+        border: 1px solid #cdd3d9;
+        outline-color: #70b730; }
+      .booking form .row .element select {
+        display: flex;
+        width: 100%;
+        height: 47px;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 15px;
+        font-size: 14px;
+        color: #4a5158;
+        border: 1px solid #cdd3d9;
+        outline-color: #70b730; }
+      .booking form .row .element i {
+        position: absolute;
+        padding-left: 15px;
+        height: 100%;
+        line-height: 47px;
+        align-items: center;
+        font-size: 20px;
+        left: 0;
+        color: #70b730; }
+      .booking form .row .element .booking__btn {
+        width: 100%;
+        height: 47px;
+        border-radius: 0.2rem;
+        padding: 0; }
+  .booking form .row__one {
+    grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 768px) {
+      .booking form .row__one {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "InputOne InputOne" "InputTwo InputThree"; }
+        .booking form .row__one .element:nth-of-type(1) {
+          grid-area: InputOne; }
+        .booking form .row__one .element:nth-of-type(2) {
+          grid-area: InputTwo; }
+        .booking form .row__one .element:nth-of-type(3) {
+          grid-area: InputThree; } }
+    @media (max-width: 568px) {
+      .booking form .row__one {
+        grid-template-columns: 1fr;
+        grid-template-areas: "InputOne" "InputTwo" "InputThree"; } }
+  .booking form .row__two {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15px; }
+    @media (max-width: 968px) {
+      .booking form .row__two {
+        grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 768px) {
+      .booking form .row__two {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 568px) {
+      .booking form .row__two {
+        grid-template-columns: 1fr; } }
+
+/*# sourceMappingURL=Styles.css.map */

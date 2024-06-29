@@ -1,4 +1,8 @@
+# Sass Extras:
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
+
+# Directories Extras:
+Src/

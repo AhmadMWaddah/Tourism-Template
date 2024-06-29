@@ -1,0 +1,165 @@
+.banner
+	position: relative
+	width: 100%
+	height: auto
+	padding: 60px 8%
+	min-height: 830px
+	background: url("../../../Assets/Images/BackGround.jpg")
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+	display: flex
+	align-items: center
+
+	.overlay
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background: rgba(0, 0, 0, 0.5)
+		z-index: 1
+
+	.navbar
+		position: absolute
+		width: calc(100% - 16%)
+		height: 80px
+		margin: 0 auto
+		padding: 0 30px
+		background: $MainColor
+		top: 60px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		z-index: 100
+
+		&__opened
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			padding: 30px 8%
+			box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4)
+			animation: navBarShow 1s
+
+		.logo
+			width: 130px
+
+		.links
+			position: relative
+
+			@include respond-to($BreakPoint_868)
+				position: fixed
+				width: 100%
+				height: 100vh
+				background: $MainColor
+				top: 0
+				right: -100%
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				transition: $BaseTransition
+				z-index: 101
+
+				&__opened
+					right: 0
+
+			ul
+				list-style: none
+
+				li
+					display: inline-block
+					margin-left: 16px
+
+					@include respond-to($BreakPoint_868)
+						margin: 20px 0
+						display: block
+						text-align: center
+
+					&:hover
+						
+						a
+							color: $HeadingDarkColor
+
+					a
+						text-decoration: none
+						color: $HeadingLightColor
+						text-transform: uppercase
+						font-size: 15px
+						transition: $BaseTransition
+
+						@include respond-to($BreakPoint_868)
+							font-size: 20px
+							font-weight: bold
+							letter-spacing: 1px
+
+			.close
+				position: absolute
+				top: 20px
+				right: 30px
+				cursor: pointer
+				z-index: 102
+				display: none
+
+				@include respond-to($BreakPoint_868)
+					display: block
+
+				i
+					font-size: 24px
+					color: $HeadingLightColor
+
+		.menu__btn
+			cursor: pointer
+			display: none
+
+			@include respond-to($BreakPoint_868)
+				display: block
+
+			i
+				color: $HeadingLightColor
+				font-size: 22px
+
+	.content
+		position: relative
+		width: 100%
+		height: 100%
+		padding-top: 30px
+		z-index: 2
+
+		h1
+			position: relative
+			font-size: calc(40px + 1.5vw)
+			color: $HeadingLightColor
+			font-weight: 500
+			margin: 20px 0
+
+			&::before
+				content: ""
+				position: absolute
+				height: 3px
+				width: 40px
+				background: $MainColor
+				left: 0
+				top: 120%
+
+		h2
+			font-size: calc(18px + 1vw)
+			letter-spacing: 1px
+			color: $HeadingLightColor
+
+		p
+			max-width: 500px
+			margin: 35px 0
+			color: $TextLightColor
+			line-height: 1.2
+
+		.banner__btn
+			font-size: 16px
+			align-self: flex-start
+			box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.55)
+			transition: $BaseTransition
+
+			&:hover
+				box-shadow: 5px 5px 14px -1px rgba(0, 0, 0, 0.4)
+
