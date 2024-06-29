@@ -1,0 +1,47 @@
+.row__two
+	width: 100%
+	display: grid
+	padding: 20px 8% 40px
+	grid-template-columns: 5fr 7fr
+
+	@include respond-to($BreakPoint_968)
+		grid-template-columns: 1fr
+
+	.facts
+		padding: 20px 20px 0 8%
+		display: flex
+		gap: 20px
+
+		@include respond-to($BreakPoint_968)
+			padding: 0
+
+		@include respond-to($BreakPoint_568)
+			flex-direction: column
+
+		.box
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			padding: 15px
+
+			.icon
+				position: relative
+
+				i
+					font-size: 24px
+					color: $MainColor
+
+			.description
+				margin-top: 10px
+				text-align: center
+
+				h2
+					font-size: 20px
+					font-weight: 500
+					color: $HeadingDarkColor
+					margin-bottom: 8px
+
+				p
+					color: $TextDarkColor
+					font-size: 15px

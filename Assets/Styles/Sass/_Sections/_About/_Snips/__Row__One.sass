@@ -1,0 +1,59 @@
+.row__one
+	width: calc(100% - 8%)
+	padding-left: 8%
+	padding-top: 80px
+	background: $BackGroundTwo
+	display: grid
+	grid-template-columns: 5fr 7fr
+
+	@include respond-to($BreakPoint_968)
+		grid-template-columns: 1fr
+
+	.image
+		position: relative
+
+		@include respond-to($BreakPoint_968)
+			margin-bottom: 30px
+
+		img
+			position: absolute
+			width: 100%
+			height: 550px
+			object-fit: cover
+
+			@include respond-to($BreakPoint_968)
+				display: block
+				position: relative
+
+			@include respond-to($BreakPoint_568)
+				height: 400px
+
+	.content
+		padding: 0 20px 60px 8%
+
+		@include respond-to($BreakPoint_968)
+			padding: 0 20px 60px 0%
+
+		h3
+			font-size: 16px
+			font-weight: 500
+			color: $MainColor
+			text-transform: uppercase
+			letter-spacing: 2px
+			margin-bottom: 10px
+
+		h1
+			font-size: calc(21px + 1.5vw)
+			font-weight: 600
+			color: $HeadingDarkColor
+			line-height: 1.2
+
+		p
+			font-size: 16px
+			color: $TextDarkColor
+			line-height: 1.3
+			margin-top: 15px
+
+		.about__btn
+			margin-top: 40px
+			padding: 14px 30px
