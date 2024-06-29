@@ -40,8 +40,7 @@ body {
   .btn:hover {
     background: #509710; }
 
-/* =--------------------------------------= Home Page Styles =------------------= */
-/* =------= Home Part Partition =---= */
+/* =--------------------------------------= Home Part Partition =------------------= */
 .home {
   width: 100%;
   /* =------= Addresses Part Partition =---= */
@@ -272,7 +271,7 @@ body {
         .home .banner .content .banner__btn:hover {
           box-shadow: 5px 5px 14px -1px rgba(0, 0, 0, 0.4); }
 
-/* =------= Home Part Partition =---= */
+/* =--------------------------------------= Booking Part Partition =------------------= */
 /* =------= Addresses Part Partition =---= */
 .booking {
   position: relative;
@@ -362,5 +361,104 @@ body {
     @media (max-width: 568px) {
       .booking form .row__two {
         grid-template-columns: 1fr; } }
+
+/* =--------------------------------------= About Part Partition =------------------= */
+.about {
+  width: 100%;
+  margin: 30px 0 20px;
+  /* =------= Row One =---= */
+  /* =------= Row Two =---= */ }
+  .about .row__one {
+    width: calc(100% - 8%);
+    padding-left: 8%;
+    padding-top: 80px;
+    background: #f6f6f6;
+    display: grid;
+    grid-template-columns: 5fr 7fr; }
+    @media (max-width: 968px) {
+      .about .row__one {
+        grid-template-columns: 1fr; } }
+    .about .row__one .image {
+      position: relative; }
+      @media (max-width: 968px) {
+        .about .row__one .image {
+          margin-bottom: 30px; } }
+      .about .row__one .image img {
+        position: absolute;
+        width: 100%;
+        height: 550px;
+        object-fit: cover; }
+        @media (max-width: 968px) {
+          .about .row__one .image img {
+            display: block;
+            position: relative; } }
+        @media (max-width: 568px) {
+          .about .row__one .image img {
+            height: 400px; } }
+    .about .row__one .content {
+      padding: 0 20px 60px 8%; }
+      @media (max-width: 968px) {
+        .about .row__one .content {
+          padding: 0 20px 60px 0%; } }
+      .about .row__one .content h3 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #70b730;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px; }
+      .about .row__one .content h1 {
+        font-size: calc(21px + 1.5vw);
+        font-weight: 600;
+        color: #212121;
+        line-height: 1.2; }
+      .about .row__one .content p {
+        font-size: 16px;
+        color: #454545;
+        line-height: 1.3;
+        margin-top: 15px; }
+      .about .row__one .content .about__btn {
+        margin-top: 40px;
+        padding: 14px 30px; }
+  .about .row__two {
+    width: 100%;
+    display: grid;
+    padding: 20px 8% 40px;
+    grid-template-columns: 5fr 7fr; }
+    @media (max-width: 968px) {
+      .about .row__two {
+        grid-template-columns: 1fr; } }
+    .about .row__two .facts {
+      padding: 20px 20px 0 8%;
+      display: flex;
+      gap: 20px; }
+      @media (max-width: 968px) {
+        .about .row__two .facts {
+          padding: 0; } }
+      @media (max-width: 568px) {
+        .about .row__two .facts {
+          flex-direction: column; } }
+      .about .row__two .facts .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px; }
+        .about .row__two .facts .box .icon {
+          position: relative; }
+          .about .row__two .facts .box .icon i {
+            font-size: 24px;
+            color: #70b730; }
+        .about .row__two .facts .box .description {
+          margin-top: 10px;
+          text-align: center; }
+          .about .row__two .facts .box .description h2 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #212121;
+            margin-bottom: 8px; }
+          .about .row__two .facts .box .description p {
+            color: #454545;
+            font-size: 15px; }
 
 /*# sourceMappingURL=Styles.css.map */
