@@ -24,17 +24,39 @@ window.addEventListener("load", () => {
 	/* =--------------------------------------= Banner NavBar Overlay =------------------= */
 	var banner = document.querySelector("#banner");
 	var navbar = document.querySelector("#banner #navbar");
-
 	window.addEventListener("scroll", scrollFuncs);
 	window.addEventListener("load", scrollFuncs);
 	function scrollFuncs() {
-		if (banner.getBoundingClientRect().top <= 150) {
+		if (banner.getBoundingClientRect().top <= 100) {
 			navbar.classList.add("navbar__opened");
 		}else {
 			navbar.classList.remove("navbar__opened");
 		};
 	};
 
+
+	/* =--------------------------------------= Destination Owl Carousel Slider =------------------= */
+	$("#destination-slider").owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: true,
+		navText: [
+			"<i class='fa-solid fa-arrow-left'></i>",
+			"<i class='fa-solid fa-arrow-right'></i>"
+		],
+		responsive: {
+			0: {
+				items: 1,
+				nav: false
+			},
+			600: {
+				items: 2
+			},
+			1000: {
+				items: 3
+			},
+		}
+	});
 
 
 });

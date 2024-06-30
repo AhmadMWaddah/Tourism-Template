@@ -18,6 +18,18 @@ body {
   width: 100%; }
 
 /* =--------------------------------------= Import Components =------------------= */
+.header h1 {
+  font-size: calc(100% + 1.5vw);
+  color: #212121;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  text-transform: uppercase; }
+.header h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #70b730; }
+
 /* =--------------------------------------= Import Utils Classes =------------------= */
 .wrapper {
   height: 100%;
@@ -460,5 +472,85 @@ body {
           .about .row__two .facts .box .description p {
             color: #454545;
             font-size: 15px; }
+
+/* =--------------------------------------= About Part Partition =------------------= */
+.destination {
+  width: 100%;
+  padding: 18px 8% 10px;
+  /* =------= Places Part Partition =---= */
+  /* =------= Owl Nav Part Partition =---= */ }
+  .destination .places {
+    width: 100%; }
+    .destination .places .item {
+      position: relative;
+      max-height: 450px;
+      border-radius: 15px;
+      overflow: hidden; }
+      .destination .places .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px; }
+      .destination .places .item .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 30px 20px 30px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.01) 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column; }
+        .destination .places .item .overlay .explore__btn {
+          font-size: 14px;
+          background: rgba(112, 183, 48, 0.5); }
+          .destination .places .item .overlay .explore__btn:hover {
+            background: #70b730; }
+        .destination .places .item .overlay .description {
+          position: relative; }
+          .destination .places .item .overlay .description h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #fefefe;
+            text-transform: capitalize;
+            font-weight: 500;
+            letter-spacing: 1px; }
+          .destination .places .item .overlay .description p {
+            font-size: 15px;
+            color: #fefefe; }
+            .destination .places .item .overlay .description p i {
+              margin-right: 10px;
+              font-size: 18px;
+              color: #70b730; }
+  .destination .owl-nav {
+    position: absolute;
+    top: -80px;
+    right: 0; }
+    .destination .owl-nav .owl-prev {
+      width: 40px;
+      height: 40px;
+      border-radius: 50% !important;
+      background: #70b730 !important;
+      color: #fefefe !important;
+      font-size: 18px !important;
+      transition: all 0.3s ease-in-out; }
+      .destination .owl-nav .owl-prev:hover {
+        background: #509710 !important; }
+    .destination .owl-nav .owl-next {
+      width: 40px;
+      height: 40px;
+      border-radius: 50% !important;
+      background: #70b730 !important;
+      color: #fefefe !important;
+      font-size: 18px !important;
+      transition: all 0.3s ease-in-out; }
+      .destination .owl-nav .owl-next:hover {
+        background: #509710 !important; }
+  .destination .owl-dots {
+    margin-top: 20px !important; }
+    .destination .owl-dots .owl-dot.active span {
+      background: #70b730 !important; }
 
 /*# sourceMappingURL=Styles.css.map */
