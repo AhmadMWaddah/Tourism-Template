@@ -30,6 +30,36 @@ body {
   letter-spacing: 1px;
   color: #70b730; }
 
+.owl-nav {
+  position: absolute;
+  top: -80px;
+  right: 0; }
+  .owl-nav .owl-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    background: #70b730 !important;
+    color: #fefefe !important;
+    font-size: 18px !important;
+    transition: all 0.3s ease-in-out; }
+    .owl-nav .owl-prev:hover {
+      background: #509710 !important; }
+  .owl-nav .owl-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    background: #70b730 !important;
+    color: #fefefe !important;
+    font-size: 18px !important;
+    transition: all 0.3s ease-in-out; }
+    .owl-nav .owl-next:hover {
+      background: #509710 !important; }
+
+.owl-dots {
+  margin-top: 20px !important; }
+  .owl-dots .owl-dot.active span {
+    background: #70b730 !important; }
+
 /* =--------------------------------------= Import Utils Classes =------------------= */
 .wrapper {
   height: 100%;
@@ -477,8 +507,7 @@ body {
 .destination {
   width: 100%;
   padding: 18px 8% 10px;
-  /* =------= Places Part Partition =---= */
-  /* =------= Owl Nav Part Partition =---= */ }
+  /* =------= Places Part Partition =---= */ }
   .destination .places {
     width: 100%; }
     .destination .places .item {
@@ -524,34 +553,6 @@ body {
               margin-right: 10px;
               font-size: 18px;
               color: #70b730; }
-  .destination .owl-nav {
-    position: absolute;
-    top: -80px;
-    right: 0; }
-    .destination .owl-nav .owl-prev {
-      width: 40px;
-      height: 40px;
-      border-radius: 50% !important;
-      background: #70b730 !important;
-      color: #fefefe !important;
-      font-size: 18px !important;
-      transition: all 0.3s ease-in-out; }
-      .destination .owl-nav .owl-prev:hover {
-        background: #509710 !important; }
-    .destination .owl-nav .owl-next {
-      width: 40px;
-      height: 40px;
-      border-radius: 50% !important;
-      background: #70b730 !important;
-      color: #fefefe !important;
-      font-size: 18px !important;
-      transition: all 0.3s ease-in-out; }
-      .destination .owl-nav .owl-next:hover {
-        background: #509710 !important; }
-  .destination .owl-dots {
-    margin-top: 20px !important; }
-    .destination .owl-dots .owl-dot.active span {
-      background: #70b730 !important; }
 
 /* =--------------------------------------= Packages Part Partition =------------------= */
 .packages {
@@ -604,7 +605,7 @@ body {
             padding: 13px 22px;
             font-size: 13px; }
 
-/* =--------------------------------------= About Steps Partition =------------------= */
+/* =--------------------------------------= Steps Partition =------------------= */
 .steps {
   width: 100%;
   padding: 100px 8% 10px;
@@ -646,5 +647,66 @@ body {
         .steps .content .box .describe p {
           color: #454545;
           line-height: 1.3; }
+
+/* =--------------------------------------= Testimonials Partition =------------------= */
+.testimonials {
+  width: 100%;
+  padding: 100px 8% 10px;
+  /* =------= Places Part Partition =---= */ }
+  .testimonials .content {
+    width: 100%;
+    position: relative; }
+    .testimonials .content .item {
+      position: relative;
+      padding-bottom: 22px;
+      top: -15px; }
+      .testimonials .content .item .person {
+        position: relative;
+        z-index: 1; }
+        .testimonials .content .item .person img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-left: 20px;
+          outline: 2px solid #70b730;
+          outline-offset: 5px;
+          position: relative;
+          top: 30px;
+          z-index: 2; }
+        .testimonials .content .item .person .info h2 {
+          position: relative;
+          font-size: 22px;
+          padding: 50px 20px 5px;
+          color: #212121;
+          background: #f6f6f6;
+          font-weight: 500; }
+        .testimonials .content .item .person .info p {
+          background: #f6f6f6;
+          color: #454545;
+          padding: 0 20px; }
+      .testimonials .content .item .quote {
+        position: relative;
+        background: #f6f6f6;
+        padding: 20px 20px 30px;
+        z-index: 0; }
+        .testimonials .content .item .quote p {
+          color: #454545;
+          line-height: 1.3; }
+        .testimonials .content .item .quote i {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+          background: #70b730;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 22px;
+          color: #fefefe;
+          left: 50%;
+          bottom: -20px;
+          transform: translateY(-50%); }
 
 /*# sourceMappingURL=Styles.css.map */
