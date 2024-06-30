@@ -1,0 +1,43 @@
+.content
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	gap: 20px
+
+	@include respond-to($BreakPoint_968)
+		grid-template-columns: repeat(2, 1fr)
+
+	@include respond-to($BreakPoint_668)
+		grid-template-columns: 1fr
+
+	.box
+		padding: 25px 15px
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		background: $BackGroundTwo
+	
+		.icon
+			width: 60px
+			height: 60px
+			border-radius: 50%
+			background: $MainColor
+			display: flex
+			justify-content: center
+			align-items: center
+		
+			i
+				font-size: 22px
+				color: $HeadingLightColor
+		
+		.describe
+			margin-top: 20px
+
+			h3
+				font-size: 22px
+				color: $HeadingDarkColor
+				margin-bottom: 10px
+
+			p
+				color: $TextDarkColor
+				line-height: 1.3
