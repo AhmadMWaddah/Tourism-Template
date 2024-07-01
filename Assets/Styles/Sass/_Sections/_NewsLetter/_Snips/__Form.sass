@@ -1,0 +1,32 @@
+.form
+	position: relative
+
+	@include respond-to($BreakPoint_768)
+		max-width: 500px
+		margin: 0px auto
+
+	input
+		height: 45px
+		width: 280px
+		padding: 0px 20px
+		margin-right: 20px
+		border: 1px solid rgb(170, 170, 170)
+		outline-color: $MainColor
+
+		@include respond-to($BreakPoint_768)
+			width: 100%
+			margin-right: 0
+			margin-bottom: 20px
+
+	.newsletter__btn
+		width: 280px
+		height: 45px
+		padding: 0
+		background: $MainColor
+		border-radius: 1px
+
+		&:hover
+			background: $MainColorDark
+
+		@include respond-to($BreakPoint_768)
+			width: 100%
