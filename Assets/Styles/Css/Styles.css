@@ -709,4 +709,49 @@ body {
           bottom: -20px;
           transform: translateY(-50%); }
 
+/* =--------------------------------------= NewsLetter Partition =------------------= */
+.newsletter {
+  width: 100%;
+  padding: 70px 8%;
+  margin-top: 30px;
+  background: #f6f6f6;
+  text-align: center;
+  /* =------= Places Part Partition =---= */ }
+  .newsletter h2 {
+    font-size: calc(24px + 1.5vw);
+    color: #212121; }
+  .newsletter p {
+    color: #454545;
+    margin: 20px 0px 50px;
+    font-size: 18px; }
+  .newsletter .form {
+    position: relative; }
+    @media (max-width: 768px) {
+      .newsletter .form {
+        max-width: 500px;
+        margin: 0px auto; } }
+    .newsletter .form input {
+      height: 45px;
+      width: 280px;
+      padding: 0px 20px;
+      margin-right: 20px;
+      border: 1px solid #aaaaaa;
+      outline-color: #70b730; }
+      @media (max-width: 768px) {
+        .newsletter .form input {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px; } }
+    .newsletter .form .newsletter__btn {
+      width: 280px;
+      height: 45px;
+      padding: 0;
+      background: #70b730;
+      border-radius: 1px; }
+      .newsletter .form .newsletter__btn:hover {
+        background: #509710; }
+      @media (max-width: 768px) {
+        .newsletter .form .newsletter__btn {
+          width: 100%; } }
+
 /*# sourceMappingURL=Styles.css.map */
