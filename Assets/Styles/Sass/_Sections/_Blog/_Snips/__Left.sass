@@ -1,0 +1,47 @@
+.posts__list
+	position: relative
+	display: grid
+	grid-template-columns: 1fr 1fr
+	gap: 20px
+
+	@include respond-to($BreakPoint_668)
+		grid-template-columns: 1fr
+	
+	.post__box
+		position: relative
+		background: $BackGroundTwo
+	
+		img
+			width: 100%
+			max-height: 250px
+			object-fit: cover
+
+		.post
+			padding: 15px 15px 20px
+
+			h1
+				color: $HeadingDarkColor
+				font-size: 24px
+				font-weight: 500
+				margin-bottom: 15px
+
+			.author
+				display: flex
+				color: $HeadingDarkColor
+				font-size: 15px
+
+				span
+
+					&:nth-of-type(2)
+						margin-left: 20px
+
+					i
+						color: $HeadingDarkColor
+						margin-right: 5px
+
+			p
+				margin: 15px 0 20px
+				color: $TextDarkColor
+
+			a
+				color: $MainColor

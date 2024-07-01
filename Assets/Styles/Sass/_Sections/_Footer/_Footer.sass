@@ -1,0 +1,36 @@
+.footer
+	width: 100%
+	padding: 50px 8% 30px
+	background: $MainColor
+	display: grid
+	grid-template-columns: 3fr 2fr 2fr
+	gap: 10px 20px
+
+	@include respond-to($BreakPoint_668)
+		grid-template-columns: 1fr
+
+	.block
+		position: relative
+
+		.title
+			min-height: 60px
+			display: flex
+			align-items: flex-end
+			margin-bottom: 30px
+
+			h3
+				font-size: 24px
+				color: $HeadingLightColor
+
+		.content
+			display: flex
+			flex-direction: column
+	
+	/* =------= One Part =---= */
+	@import "_Snips/__One.sass"
+
+	/* =------= One Part =---= */
+	@import "_Snips/__Two.sass"
+
+	/* =------= One Part =---= */
+	@import "_Snips/__Three.sass"
